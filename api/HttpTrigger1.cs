@@ -27,7 +27,7 @@ namespace Company.Function
 
             StringContent content = new StringContent(requestBody, Encoding.UTF8, "application/json");
 
-            var response = await httpClient.PostAsync("https://ddt11apiapp-cnh9cgfnduhhh0c7.uksouth-01.azurewebsites.net/api/numbers", content);
+            var response = await httpClient.PostAsync("https://ddt11f1.azurewebsites.net/api/HttpTrigger1?code=9y5KZqkaaciSngZ-1576Zj7HxaZKmMvmBCKCY3Q0h7taAzFuY2R7AQ%3D%3D", content);
 
             var responseMessage = await response.Content.ReadAsStringAsync();
 
